@@ -14,13 +14,19 @@ import {MatTabsModule} from '@angular/material/tabs';
 import { SubredditComponent } from './reddit-aggregator/subreddit/subreddit.component';
 import {MatListModule} from '@angular/material/list';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
+import { JokeComponent } from './joke/joke.component';
+import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
+import { JokeBottomSheetComponent } from './joke/joke-bottom-sheet/joke-bottom-sheet.component';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [
     AppComponent,
     WeatherComponent,
     RedditAggregatorComponent,
-    SubredditComponent
+    SubredditComponent,
+    JokeComponent,
+    JokeBottomSheetComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +37,9 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     MatButtonModule,
     MatTabsModule,
     MatListModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    MatBottomSheetModule,
+    MatProgressSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
