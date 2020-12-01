@@ -1,0 +1,8 @@
+<div class="div-wrapper">
+  <mat-tab-group>
+    <mat-tab *ngFor="let subreddit of subreddits" label="{{subreddit}}">
+      <app-subreddit [name]="subreddit"></app-subreddit>
+    </mat-tab>
+  </mat-tab-group>
+
+</div>

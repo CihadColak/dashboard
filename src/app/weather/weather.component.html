@@ -1,1 +1,5 @@
-<p>weather works!</p>
+<p *ngIf="weatherInCelsius">Berlin: {{weatherInCelsius }} °C</p>
+<img *ngIf="primaryImgSrc" src='{{primaryImgSrc}}' alt="">
+<img *ngIf="secondaryImgSrc" src='{{secondaryImgSrc}}' alt="">
+<p>{{iconDescription}}</p>
+

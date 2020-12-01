@@ -1,0 +1,8 @@
+
+<mat-progress-bar *ngIf="loading" mode="indeterminate"></mat-progress-bar>
+<mat-nav-list *ngIf="news && !loading">
+  <mat-list-item *ngFor="let singularNews of news">
+    <a matLine href="{{singularNews.url_overridden_by_dest}}">{{singularNews.title}}</a>
+
+  </mat-list-item>
+</mat-nav-list>
